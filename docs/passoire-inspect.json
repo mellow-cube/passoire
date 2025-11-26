@@ -1,0 +1,70 @@
+[
+    {
+        "Architecture": "amd64",
+        "Config": {
+            "Cmd": [
+                "/passoire/init.sh"
+            ],
+            "Env": [
+                "GROUP_SECRET=0e159939f96650f8bc970e260a548b9e92fdcc8e",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBIAN_FRONTEND=noninteractive",
+                "NODE_ENV=production",
+                "NODE_OPTIONS=--openssl-legacy-provider"
+            ],
+            "ExposedPorts": {
+                "22/tcp": {},
+                "3002/tcp": {},
+                "3306/tcp": {},
+                "80/tcp": {}
+            },
+            "Labels": {
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "20.04"
+            },
+            "WorkingDir": "/passoire"
+        },
+        "Created": "2025-11-13T13:22:44.673599079+01:00",
+        "Descriptor": {
+            "digest": "sha256:4224a6bd68adc1b795e3cac90e4a21fc000df301932c0235e1f3995b62ae1855",
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "size": 4199
+        },
+        "Id": "sha256:4224a6bd68adc1b795e3cac90e4a21fc000df301932c0235e1f3995b62ae1855",
+        "Metadata": {
+            "LastTagTime": "2025-11-13T12:22:45.115127659Z"
+        },
+        "Os": "linux",
+        "Parent": "sha256:d64808cab8cce7b7dbc14e775e5e95a2b48ac71cd5396fe21df6bd1f5cf0c74e",
+        "RepoDigests": [
+            "passoire-group18-base@sha256:4224a6bd68adc1b795e3cac90e4a21fc000df301932c0235e1f3995b62ae1855"
+        ],
+        "RepoTags": [
+            "passoire-group18-base:latest"
+        ],
+        "RootFS": {
+            "Layers": [
+                "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6",
+                "sha256:2b806d3bb3a5a845e34927b682e04b626a746cdfa0687f0fcd0076ccbbab3bc7",
+                "sha256:d4e6b8e6fb7bb827f3901765c86549cdb067b7563376970d9245cd19d0067d2f",
+                "sha256:495f92a0b301d0bca4f93df54006262b29ac759dbe405ad0e8ef4eb0b0acb878",
+                "sha256:c7b481b119d0331a5bce9156b139a187eaa7de240efdcd6ad390ffddd9e3593b",
+                "sha256:3dce1d4d805cc9cf4d98a0ea40e2851a39670569e9d74784da7716a43a68e3a9",
+                "sha256:04792efb520829e95bdbf2f950d3bc03e582191ffa02d26aa145d0d3d3b155c2",
+                "sha256:83224b741dc187fc6d6ce55bc20bc29524df4788b151d75108cebaa8ef5f487e",
+                "sha256:fc79462693b5ee91b7626b9b9f29d1a021c5e86b30f41387a5afac34f91e3de0",
+                "sha256:98139290d671b9243ae95a8b8c9c584c4f4f5a6bcb1f20e9f08ccc2b16e877ab",
+                "sha256:e7920fb74649c778167e522c4400dc975267f62b946a2525edeb43c765008b55",
+                "sha256:a0915566982ae8ec26c4f9ed7862f492211e47aa1f89b7ef911bd1ea86f51d01",
+                "sha256:fee7122cd088bbf68588a50fe2c54631eebf075628a55d0c1b5fa7605bab8631",
+                "sha256:fc607d1a38922de762a12e7c7aa3206b91ac0e95ff8ff373ca83672197c191b1",
+                "sha256:68dfb286e00b0737ddf5f71d8466c192ddc922bfd393fe9eb7fef3a73ebf05d6",
+                "sha256:17e3f28973a7b4703123f98008d953723992c409c77dea03a72c514af9fc26d4",
+                "sha256:e91370985a75f089585f74e77940737622a7910b292994390fd9f785fc872ec3",
+                "sha256:6aabbc6b75b73d919cfbb74f9158ddfbffb8d1af306bf58c745bc20ee7bdb9b3"
+            ],
+            "Type": "layers"
+        },
+        "Size": 306089542
+    }
+]
