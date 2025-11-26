@@ -2,25 +2,29 @@
 
 ## Getting started
 
-### Installing the base image
-
 ### Cloning the repository
+Clone the repository using your Git client, either on the command line or, e.g. the standard client offered by GitHub.
+
+If you are on the command line, use the following command:
+```sh
+git clone https://github.com/mellow-cube/passoire.git
+```
 
 ## Passoire container and application
 
-### Source code
+<!--### Source code
 
-### Documentation
+### Documentation-->
 
 ## Making changes to the app
 Changes are performed by modifying the Dockerfile.
 
 If you find a _vulnerability_ (bug / security problem):
 1. Document it in [`docs/security-issues.md`](docs/security-issues.md)
-2. Fix the vulnerability by making changes to the [`Dockerfile`](Dockerfile)
+2. Fix the vulnerability by making changes to the [`Dockerfile`](#Dockerfile)
 3. Create a new commit with these changes, describing the problem and the changes you performed.
 
-> [NOTE!]
+> [!NOTE]
 > In your commit message, focus on the _why_, that is, the reasons you made those changes.
 > Everyone can already see the _what_, that is, which changes you performed.
 
@@ -31,11 +35,11 @@ Our app is improved using Git and GitHub.
 
 ### Dockerfile
 The Passoire is modified using instructions in a Dockerfile:
-* [Quick Guide]()
-* [Full Reference]()
+* [Quick Guide](https://www.geeksforgeeks.org/cloud-computing/what-is-dockerfile/)
+* [Full Reference](https://docs.docker.com/reference/dockerfile/)
 
 Common ways to modify the image are:
-* Changing configuration
+* Changing the configuration
 * Replacing files (code)
 * Deleting files (code)
 
@@ -76,6 +80,6 @@ Entering into a container (shell):
 docker exec -it <container id> /bin/bash
 ```
 
-> [NOTE!]
+> [!NOTE]
 > To exit from the shell, use the command `exit`.
 
