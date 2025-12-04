@@ -9,3 +9,5 @@ RUN rm /passoire/web/flag_3
 # 2. Patch index.php to remove flag_4 in HTML comment
 COPY patch/passoire/web/index.php /passoire/web/index.php
 
+# 3. Remove my_own_cryptographic_algorithm
+RUN rm /passoire/my_own_cryptographic_algorithm
