@@ -11,3 +11,7 @@ COPY patch/passoire/web/index.php /passoire/web/index.php
 
 # 3. Remove my_own_cryptographic_algorithm
 RUN rm /passoire/my_own_cryptographic_algorithm
+
+# 4. Delete user 'admin' and their home directory
+RUN userdel admin
+RUN rm -r /home/admin

@@ -19,6 +19,7 @@
 | 1   | flag_3  | File in web directory   |
 | 2   | flag_4  | Comment in HTML code    |
 | 3   | flag_11 | Unused binary file      |
+| 4   | flag_14 | Superfluous user        |
 
 ### Details
 
@@ -26,6 +27,7 @@
 It has been removed via a command in the Dockerfile.
 2. A comment in the website (file `/passoire/index.php`) contained leaked information (flag_4). The file has been patched to remove it.
 3. The binary file `/passoire/my_own_cryptographic_algorithm` was unused and contained a secret, flag_11, (you shouldn't do your own cryptographic routines, anyhow); it has been removed.
+4. The user `admin` was superfluous (there already is a `root` user) and probably dangerous, so it has been removed. The associated home directory, `/home/admin` has been removed, along with the associated flag, flag_14, file `/home/admin/flag_14`.
 
 ## Latent issues
 
