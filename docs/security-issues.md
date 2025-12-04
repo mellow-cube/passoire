@@ -4,9 +4,9 @@
 * The `passoire/uploads/` folder is currently readily accessible; it needs to be hidden for users which are not logged in (see "Latent issues").
 * The password of `john_doe` is currently `123456`
 * The mysql database password is very insecure (currently just `airborne`); also, the password storage could be improved?
+    * Also, the password is hardcoded into the `db_connect.php`
 * The SQL API is vulnerable to SQL injections (files `index.php` and `db_connect.php`)
 * The service currently uses HTTP. Should it be switched to HTTPS?
-* There is an `admin` user, which seems kind of redundant if there is a `root` user. The associated flag is `flag_14`, file `/home/admin/flag_14`
 * There is `flag_1`, of the `passoire` user. What to do about it?
     * Ensure the password is secure.
 * There are probably open ports
