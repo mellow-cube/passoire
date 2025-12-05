@@ -15,3 +15,8 @@ RUN rm /passoire/my_own_cryptographic_algorithm
 # 4. Delete user 'admin' and their home directory
 RUN userdel admin
 RUN rm -r /home/admin
+
+# Unrelated: Update Hash function and add password list
+COPY patch/passoire/web/signup.php /passoire/web/signup.php 
+COPY patch/passoire/web/connexion.php /passoire/web/connexion.php
+ADD  patch/passoire/web/password_list.txt /passoire/web/
